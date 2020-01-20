@@ -18,6 +18,7 @@ after(fun _ ->
 )
 
 "duckduck search " &&& fun _ ->
-    waitForElement "#search_form_homepage"
-    "#search_form_input_homepage" << "Text"
+    let expectedString = "Text"
+    DuckSearchPage.searchText expectedString
+    DuckResultPage.isFirstElementWithText expectedString
     ()

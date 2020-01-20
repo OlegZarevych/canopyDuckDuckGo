@@ -8,6 +8,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="pages\DuckResultPage.fs" />
+    <Compile Include="pages\DuckSearchPage.fs" />
     <Compile Include="DuckDuckSearch.fs" />
     <Compile Include="XunitDuckDuck.fs" />
     <Compile Include="Program.fs" />
